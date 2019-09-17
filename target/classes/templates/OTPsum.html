@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <p th:text="'!' + ${sumotp} + '!'" />
+     
+    <div class="col-12" th:if="${error}==0">
+    	<form class="col-12" th:action="@{/OTPresult}" method="get">
+		<div class="form-group" id="user-group"></div>	
+                     <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Next page </button>
+                </form>
+    </div>
+    
+    <div th:if="${error}==1">
+    	<form class="col-12" th:action="@{/OTPsum}" method="post">
+        	<div class="form-group" id="user-group">
+            	<div><input type="text" class="form-control" placeholder="your OTP is" name="otpnum"/></div>
+        	</div>
+            <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>  Submit </button>
+    	</form>
+    </div>
+    
+    <div th:if="${error}==2">
+    	<form class="col-12" th:action="@{/OTPwain}" method="post">
+			<div class="form-group" id="user-group">
+            </div>	
+            <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Re-send </button>
+    	</form>
+    </div>
+                
+</body>
+</html>
