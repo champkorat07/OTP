@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
 Built-By: chanon
 Build-Jdk: 12.0.2
-Implementation-Title: LoginSecurityTutorial
+Implementation-Title: DemoOTP
 Implementation-Version: 0.0.1-SNAPSHOT
-Implementation-Vendor-Id: com.cristianruizblog
+Implementation-Vendor-Id: com.example
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
- -starter-parent/LoginSecurityTutorial
+ -starter-parent/otp
 Created-By: Maven Integration for Eclipse
 
