@@ -15,7 +15,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import com.example.otp.service.UserDetailsServiceImpl;
 
 @Configuration
-@EntityScan("com.cristianruizblog.loginSecurity")
+@EntityScan("com.example.otp")
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
